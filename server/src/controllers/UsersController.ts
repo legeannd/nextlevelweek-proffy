@@ -4,9 +4,7 @@ import {hash} from 'bcrypt';
 import db from '../database/connection';
 
 export default class UsersController {
-  async index (request: Request, response: Response) {
-
-  }
+  // async index (request: Request, response: Response) {}
 
   async create (request: Request, response: Response) {
     const { name, email, password } = request.body;
